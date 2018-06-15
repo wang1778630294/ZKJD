@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1cab885f-49f5-4e3f-b390-7d4869be1c2e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/judgegps.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/bmap.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/css/resize.css" afterPath="$PROJECT_DIR$/css/resize.css" />
+      <change beforePath="$PROJECT_DIR$/js/gps.js" afterPath="$PROJECT_DIR$/js/gps.js" />
+      <change beforePath="$PROJECT_DIR$/js/login.js" afterPath="$PROJECT_DIR$/js/login.js" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/js/resize.js" afterPath="$PROJECT_DIR$/js/resize.js" />
+      <change beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1329">
+              <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+              <folding>
+                <element signature="e#2391#2397#0" expanded="true" />
+                <element signature="e#2397#2403#0" expanded="true" />
+                <element signature="e#2403#2409#0" expanded="true" />
+                <element signature="e#2409#2415#0" expanded="true" />
+                <element signature="e#2415#2421#0" expanded="true" />
+                <element signature="e#2813#2819#0" expanded="true" />
+                <element signature="e#2819#2825#0" expanded="true" />
+                <element signature="e#2825#2831#0" expanded="true" />
+                <element signature="e#2831#2837#0" expanded="true" />
+                <element signature="e#2837#2843#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resize.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/resize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="140" column="23" lean-forward="false" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1194">
+              <caret line="839" column="19" lean-forward="false" selection-start-line="839" selection-start-column="19" selection-end-line="839" selection-end-column="19" />
+              <folding>
+                <element signature="n#!!block;n#drawUserAndLoc#0" expanded="false" />
+                <element signature="n#!!block;n#drawLocTheDay#0" expanded="false" />
+                <element signature="n#!!block;n#drawLocUserTheDay#0" expanded="false" />
+                <element signature="n#!!block;n#drawUserTheDay#0" expanded="false" />
+                <element signature="n#!!block;n#thedaylocEcharts#0" expanded="false" />
+                <element signature="n#!!block;n#counter#0" expanded="false" />
+                <element signature="n#!!block;n#userNum#0" expanded="false" />
+                <element signature="n#!!block;n#density#0" expanded="false" />
+                <element signature="n#!!block;n#locMap#0" expanded="false" />
+                <element signature="n#!!block;n#userSource#0" expanded="false" />
+                <element signature="n#!!block;n#sumUp#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getPath.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/getPath.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="61" column="35" lean-forward="false" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resize.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/resize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="188" column="26" lean-forward="false" selection-start-line="188" selection-start-column="26" selection-end-line="188" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="judgegps.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/judgegps.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="305" column="20" lean-forward="true" selection-start-line="305" selection-start-column="20" selection-end-line="305" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gps.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/gps.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>axisLabel</find>
+      <find>xAxis</find>
+      <find>yAxis</find>
+      <find>eee6B7B95</find>
+      <find>user_num</find>
+      <find>myTargetElement</find>
+      <find>main_title</find>
+      <find>module6</find>
+      <find>loc_user_container</find>
+      <find>cut_map</find>
+      <find>city_btn</find>
+      <find>gcj02tobd09</find>
+      <find>slider</find>
+      <find>a</find>
+      <find>pts</find>
+      <find>loc_user</find>
+      <find>density</find>
+      <find>model_slider</find>
+      <find>当日累计</find>
+      <find>spinner</find>
+      <find>每日定位次数</find>
+      <find>定位次数</find>
+      <find>thedayloc_echarts</find>
+      <find>sumUp</find>
+      <find>module5</find>
+      <find>mo_list</find>
+      <find>mo_number</find>
+      <find>全国</find>
+      <find>指纹</find>
+      <find>mo_title</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lib/reset.css" />
+        <option value="$PROJECT_DIR$/lib/getpath.js" />
+        <option value="$PROJECT_DIR$/data/test.json" />
+        <option value="$PROJECT_DIR$/lib/echarts.min.js" />
+        <option value="$PROJECT_DIR$/css/login.css" />
+        <option value="$PROJECT_DIR$/data/forday.json" />
+        <option value="$PROJECT_DIR$/data/for_day_rice.json" />
+        <option value="$PROJECT_DIR$/data/cumulative_today.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/js/getPath.js" />
+        <option value="$PROJECT_DIR$/lib/countUp.min.js" />
+        <option value="$PROJECT_DIR$/css/mapbox-gl.css" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/gps.js" />
+        <option value="$PROJECT_DIR$/js/judgegps.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/login.js" />
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/js/resize.js" />
+        <option value="$PROJECT_DIR$/css/resize.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="112" />
+    <option name="y" value="140" />
+    <option name="width" value="1623" />
+    <option name="height" value="942" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WhiteWaterRafting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WhiteWaterRafting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WhiteWaterRafting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WhiteWaterRafting" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WhiteWaterRafting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WhiteWaterRafting" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WhiteWaterRafting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WhiteWaterRafting" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lu\Desktop\工作目录\WhiteWaterRafting\images" />
+      <recent name="C:\Users\lu\Desktop\工作目录\WhiteWaterRafting\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lu\Desktop\工作目录\WhiteWaterRafting\lib" />
+      <recent name="C:\Users\lu\Desktop\工作目录\WhiteWaterRafting\images" />
+      <recent name="C:\Users\lu\Desktop\工作目录\WhiteWaterRafting\css" />
+      <recent name="C:\Users\lu\Desktop\工作目录\WhiteWaterRafting\js" />
+      <recent name="C:\Users\lu\Desktop\工作目录\WhiteWaterRafting\data" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cab885f-49f5-4e3f-b390-7d4869be1c2e" name="Default" comment="" />
+      <created>1528092667696</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528092667696</updated>
+      <workItem from="1528092669297" duration="28491000" />
+      <workItem from="1528246904545" duration="23541000" />
+      <workItem from="1528437918228" duration="124648000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="176680000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="112" y="140" width="1623" height="942" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17485999" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/cumulative_today.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="68" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4212">
+          <caret line="393" column="23" lean-forward="true" selection-start-line="393" selection-start-column="23" selection-end-line="393" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!block;n#drawUserAndLoc#0" expanded="false" />
+            <element signature="n#!!block;n#drawLocTheDay#0" expanded="false" />
+            <element signature="n#!!block;n#drawLocUserTheDay#0" expanded="false" />
+            <element signature="n#!!block;n#drawUserTheDay#0" expanded="false" />
+            <element signature="n#!!block;n#thedaylocEcharts#0" expanded="false" />
+            <element signature="n#!!block;n#counter#0" expanded="false" />
+            <element signature="n#!!block;n#userNum#0" expanded="false" />
+            <element signature="n#!!block;n#density#0" expanded="false" />
+            <element signature="n#!!block;n#locMap#0" expanded="false" />
+            <element signature="n#!!block;n#userSource#0" expanded="false" />
+            <element signature="n#!!block;n#sumUp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/echarts-gl.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="78" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="11" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../regulatory/node_modules/echarts/map/js/world.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/cumulative_today.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2511">
+          <caret line="93" column="62" lean-forward="false" selection-start-line="93" selection-start-column="62" selection-end-line="93" selection-end-column="62" />
+          <folding>
+            <element signature="n#!!block;n#drawUserAndLoc#0" expanded="false" />
+            <element signature="n#!!block;n#drawLocTheDay#0" expanded="false" />
+            <element signature="n#!!block;n#drawLocUserTheDay#0" expanded="false" />
+            <element signature="n#!!block;n#drawUserTheDay#0" expanded="false" />
+            <element signature="n#!!block;n#thedaylocEcharts#0" expanded="false" />
+            <element signature="n#!!block;n#counter#0" expanded="false" />
+            <element signature="n#!!block;n#userNum#0" expanded="false" />
+            <element signature="n#!!block;n#density#0" expanded="false" />
+            <element signature="n#!!block;n#locMap#0" expanded="false" />
+            <element signature="n#!!block;n#userSource#0" expanded="false" />
+            <element signature="n#!!block;n#sumUp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/forday.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347220">
+          <caret line="12860" column="41" lean-forward="true" selection-start-line="12860" selection-start-column="41" selection-end-line="12860" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/echarts.min.js" />
+    <entry file="file://$PROJECT_DIR$/lib/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/getpath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../echarts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="0" column="682" lean-forward="false" selection-start-line="0" selection-start-column="682" selection-end-line="0" selection-end-column="682" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/echarts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/china.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="0" column="402" lean-forward="true" selection-start-line="0" selection-start-column="402" selection-end-line="0" selection-end-column="402" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test_buildings_showmap.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/forday.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="12719" column="41" lean-forward="true" selection-start-line="12719" selection-start-column="41" selection-end-line="12719" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/for_day_rice.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/cumulative_today.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/echarts-gl.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../regulatory/node_modules/echarts/map/js/world.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data-1461574801505-SJtcnUog.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data-1491917776060-Sku0i8qpx.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5913">
+          <caret line="0" column="1022" lean-forward="false" selection-start-line="0" selection-start-column="1022" selection-end-line="0" selection-end-column="1022" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/countUp.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="256" column="18" lean-forward="false" selection-start-line="256" selection-start-column="11" selection-end-line="256" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/svg/mapboxgl-ctrl-logo.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mapbox-gl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="124" column="1" lean-forward="true" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-477">
+          <caret line="99" column="18" lean-forward="true" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/bmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="15089" column="17" lean-forward="false" selection-start-line="15089" selection-start-column="17" selection-end-line="15089" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/getPath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="61" column="35" lean-forward="false" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/judgegps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="305" column="20" lean-forward="true" selection-start-line="305" selection-start-column="20" selection-end-line="305" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1194">
+          <caret line="839" column="19" lean-forward="false" selection-start-line="839" selection-start-column="19" selection-end-line="839" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!block;n#drawUserAndLoc#0" expanded="false" />
+            <element signature="n#!!block;n#drawLocTheDay#0" expanded="false" />
+            <element signature="n#!!block;n#drawLocUserTheDay#0" expanded="false" />
+            <element signature="n#!!block;n#drawUserTheDay#0" expanded="false" />
+            <element signature="n#!!block;n#thedaylocEcharts#0" expanded="false" />
+            <element signature="n#!!block;n#counter#0" expanded="false" />
+            <element signature="n#!!block;n#userNum#0" expanded="false" />
+            <element signature="n#!!block;n#density#0" expanded="false" />
+            <element signature="n#!!block;n#locMap#0" expanded="false" />
+            <element signature="n#!!block;n#userSource#0" expanded="false" />
+            <element signature="n#!!block;n#sumUp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/resize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="140" column="23" lean-forward="false" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/resize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="188" column="26" lean-forward="false" selection-start-line="188" selection-start-column="26" selection-end-line="188" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1329">
+          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding>
+            <element signature="e#2391#2397#0" expanded="true" />
+            <element signature="e#2397#2403#0" expanded="true" />
+            <element signature="e#2403#2409#0" expanded="true" />
+            <element signature="e#2409#2415#0" expanded="true" />
+            <element signature="e#2415#2421#0" expanded="true" />
+            <element signature="e#2813#2819#0" expanded="true" />
+            <element signature="e#2819#2825#0" expanded="true" />
+            <element signature="e#2825#2831#0" expanded="true" />
+            <element signature="e#2831#2837#0" expanded="true" />
+            <element signature="e#2837#2843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

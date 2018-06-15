@@ -1,0 +1,199 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 1920px;
+    height: 100%;
+    background-color: #0E4C7D;
+    box-sizing: border-box;
+    padding:0 20px;
+}
+.main .title{
+    height: 55px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 55px;
+}
+.main .module{
+    /*background: #eeeeee;*/
+    float: left;
+}
+.main .module1{
+    width: 525px;
+    height: 475px;
+    margin-top: 20px;
+}
+.main .module1 #location_echarts{
+    width: 525px;
+    height: 475px;
+}
+.main .module2{
+    width: 590px;
+    height: 85px;
+    margin-top: 20px;
+    margin-left: 85px;
+    /*background: #000000;*/
+    color: #ffffff;
+    text-align: center;
+}
+.main .module2 #myTargetElement{
+    width: 590px;
+    height: 60px;
+    font-size: 50px;
+    /*background: #000000;*/
+    color: #ffffff;
+    line-height: 60px;
+}
+
+.main .module4{
+    float: right;
+    width: 550px;
+    height: 860px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.main .module4 .loc_user_container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.main .module4 .loc_map{
+    width: 100%;
+    height: 440px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.main .module4 .loc_map #mapCharts{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main .module4 .loc_map #cut_map{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.main .module4 #loc_emap{
+    width: 550px;
+    height: 440px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.main .module4 #cut_map div{
+    float: left;
+}
+.main .module4 #loc_user{
+    width: 480px;
+    height: 450px;
+}
+.main .module5{
+    width: 520px;
+    height: 410px;
+    overflow: hidden;
+    position: relative;
+}
+.main .module6{
+    width: 235px;
+    height: 205px;
+    margin-left: 15px;
+    margin-top: 130px;
+}
+.main .module6 #statistics{
+    wdith: 235px;
+    height: 205px;
+}
+.main .module7{
+    width: 470px;
+    height: 355px;
+    margin-left: 15px;
+    overflow: hidden;
+}
+.main .module7 #theday_echarts{
+    wdith: 470px;
+    height: 395px;
+}
+.main .module8{
+    width: 530px;
+    height:145px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.main .module8 #thedayloc_echarts{
+    width: 530px;
+    height: 205px;
+}
+.main .module9{
+    width: 235px;
+    height: 205px;
+    margin-left: 25px;
+    margin-top: -60px;
+}
+.main .module9 #user_source{
+    width: 205px;
+    height: 175px;
+    margin: 15px;
+}
+.main .module10{
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 790px;
+    height: 195px;
+    overflow: hidden;
+}
+.main .module10 #thedayrice_echarts{
+    width: 790px;
+    height: 255px;
+}
+
+/*loading*/
+.spinner {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #67CF22;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+      }
+}

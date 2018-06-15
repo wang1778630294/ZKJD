@@ -1,0 +1,107 @@
+{
+  "status": 1,
+  "user_total": 1600,
+  "locat_total": 3000,
+  "data": [
+    {
+      "name": "中关村wifiBeijing",
+      "user_count": 999,
+      "location_count":1300
+    },
+    {
+      "name": "南昌洪大",
+      "user_count": 999,
+      "location_count": 1258
+    },
+    {
+      "name": "北京西站",
+      "user_count": 999,
+      "location_count":300
+    },
+    {
+      "name": "广州南站",
+      "user_count": 776,
+      "location_count": 852
+    },
+    {
+      "name": "上海虹桥机场",
+      "user_count": 825,
+      "location_count": 630
+    },
+    {
+      "name": "中关村wifiBeijing",
+      "user_count": 999,
+      "location_count":1300
+    },
+    {
+      "name": "南昌洪大",
+      "user_count": 999,
+      "location_count": 1258
+    },
+    {
+      "name": "北京西站",
+      "user_count": 999,
+      "location_count":300
+    },
+    {
+      "name": "广州南站",
+      "user_count": 776,
+      "location_count": 852
+    },
+    {
+      "name": "上海虹桥机场",
+      "user_count": 825,
+      "location_count": 630
+    },
+    {
+      "name": "中关村wifiBeijing",
+      "user_count": 999,
+      "location_count":1300
+    },
+    {
+      "name": "南昌洪大",
+      "user_count": 1999,
+      "location_count": 1258
+    },
+    {
+      "name": "北京西站",
+      "user_count": 999,
+      "location_count":300
+    },
+    {
+      "name": "广州南站",
+      "user_count": 776,
+      "location_count": 852
+    },
+    {
+      "name": "上海虹桥机场",
+      "user_count": 825,
+      "location_count": 630
+    },
+    {
+      "name": "中关村wifiBeijing",
+      "user_count": 999,
+      "location_count":1300
+    },
+    {
+      "name": "南昌洪大",
+      "user_count": 999,
+      "location_count": 1258
+    },
+    {
+      "name": "北京西站",
+      "user_count": 999,
+      "location_count":300
+    },
+    {
+      "name": "广州南站",
+      "user_count": 776,
+      "location_count": 852
+    },
+    {
+      "name": "上海虹桥机场",
+      "user_count": 825,
+      "location_count": 630
+    }
+  ]
+}
