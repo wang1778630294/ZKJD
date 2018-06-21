@@ -15,8 +15,12 @@
     </div>
     <div class="module module1">
         <!--全国定位总数员工总数与各场所分布数量-->
-        <div id="location_echarts"></div>
-        <div class="lamp"></div>
+        <!--<div id="location_echarts"></div>-->
+        <!--每日定位用户图-->
+        <div class="loc_user_container">
+            <div id="loc_user"></div>
+        </div>
+        <!--<div class="lamp"></div>-->
     </div>
     <div class="module module2">
         <div id="myTargetElement">...</div>
@@ -28,13 +32,51 @@
         当日总用户数
     </div>
     <div class="module module4">
-        <!--每日定位用户图-->
         <div class="loc_user_container">
-            <div id="loc_user"></div>
+            <div class="module module9">
+                <div class="user_resoue">
+                    用户来源及各定位源总数
+                </div>
+                <div class="spinner_content2">
+                    <div class="spinner"></div>
+                </div>
+                <!--用户来源-->
+                <div id="user_source"></div>
+
+                <ul class="mo_list">
+                    <li>
+                        <p class="mo_title">定位总次数</p>
+                        <p class="mo_number" id="loc_sum">......</p>
+                    </li>
+                    <li>
+                        <p class="mo_title">定位总用户数</p>
+                        <p class="mo_number" id="user_sum">......</p>
+                    </li>
+                    <li>
+                        <p class="mo_title">AP总数</p>
+                        <p class="mo_number" id="ap_sum">......</p>
+                    </li>
+                    <li>
+                        <p class="mo_title">指纹总数</p>
+                        <p class="mo_number" id="dir_sum">......</p>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <!--<div class="module module6">-->
+
+            <!--</div>-->
         </div>
+
+
         <div class="loc_map">
+            <div class="spinner_content">
+                <div class="spinner"></div>
+            </div>
+            <div id="density"></div>
             <div id="loc_emap"></div>
-            <div id="mapCharts"></div>
             <div id="cut_map" >
                 <div class="model_slider">
                     <div class="checkbox">
@@ -47,30 +89,11 @@
     </div>
     <!--全国指纹分部-->
     <div class="module module5">
-        <div class="spinner_content">
-            <div class="spinner"></div>
-        </div>
-        <div id="density"></div>
+
+        <div id="mapCharts"></div>
+
     </div>
-    <div class="module module6">
-        <ul class="mo_list">
-            <li>
-                <p class="mo_title">定位总次数</p>
-                <p class="mo_number" id="loc_sum"></p>
-            </li>
-            <li>
-                <p class="mo_title">定位总用户数</p>
-                <p class="mo_number" id="user_sum"></p>
-            </li>
-            <li>
-                <p class="mo_title">AP总数</p>
-                <p class="mo_number" id="ap_sum"></p>
-            </li>
-            <li>
-                <p class="mo_title">指纹总数</p>
-                <p class="mo_number" id="dir_sum"></p></li>
-        </ul>
-    </div>
+
     <div class="module module7">
         <!--周/月/年每日定位次数折线、柱状图-->
         <div id="theday_echarts"></div>
@@ -83,14 +106,11 @@
         </div>
         <div id="thedayloc_echarts"></div>
     </div>
-    <div class="module module9">
-        <!--用户来源-->
-        <div id="user_source"></div>
-    </div>
+
     <div class="module module10">
         <!--周/月/年每日定位用户增长折线、柱状图-->
         <div class="thedayloc_title">
-            <span>每日定位次数增长图</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span><b>每日定位用户数增长图</b></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <span class="loc_num">共计<span id="thedayuser_num"></span>天数据</span>
         </div>
         <div id="thedayrice_echarts"></div>

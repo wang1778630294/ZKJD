@@ -40,7 +40,7 @@ function onResize(){
     
     $(".module1").css({
     	"width": 525*_x,
-    	"height": 475*_y,
+    	"height": 415*_y,
     	"marginTop": 20*_y
     })
     
@@ -50,7 +50,7 @@ function onResize(){
     })
     
     $(".module2").css({
-    	"width": 345*_x,
+    	"width": 355*_x,
     	"height": 85*_y,
     	"marginTop": 20*_y,
     	"marginLeft": 40*_x
@@ -64,7 +64,7 @@ function onResize(){
     });
 
     $(".module3").css({
-        "width": 345*_x,
+        "width": 355*_x,
         "height": 85*_y,
         "marginTop": 20*_y,
         "marginLeft": 40*_x
@@ -86,13 +86,13 @@ function onResize(){
     })
     
     $(".loc_user_container").css({
-    	"height": 400*_y,
+    	"height": 300*_y,
 		"width": 500*_x
     })
     
     $(".loc_map").css({
-    	"height": 440*_y,
-    	"marginTop": 20*_y
+    	"height": 465*_y,
+    	"marginTop": 50*_y
     })
     
     $("#cut_map").css({
@@ -106,26 +106,32 @@ function onResize(){
     })
     
     $("#loc_user").css({
-    	"width": 480*_x,
-    	"height": 400*_y
+        "width": 520*_x,
+        "height": 440*_y
     })
     
     $(".module5").css({
-    	"width": 520*_x,
+    	"width": 825*_x,
     	"height": 410*_y
     })
 
 	$("#density").css({
-        "width": 520*_x,
-        "height": 410*_y
+        "width": 550*_x,
+        "height": 440*_y
 	})
     
     $(".module6").css({
     	"width": 235*_x,
     	"height": 205*_y,
-    	"marginTop": 130*_y,
+    	"marginTop": 10*_y,
     	"marginLeft": 15*_x
     })
+
+	$(".mo_list").css({
+		"width": 235*_x,
+		"height": 205*_y,
+		"marginLeft": 15*_x
+	})
 
 	$(".mo_list li").css({
 		"width": 195*_x,
@@ -136,6 +142,12 @@ function onResize(){
 	$(".mo_list li .mo_title").css({
         "height": 41*_y
 	})
+
+	$(".spinner_content2").css({
+		"left": -130*_x,
+		"top": 10*_y
+	})
+
     //
 	$(".mo_number").css({
 		"height": 41*_y
@@ -147,49 +159,50 @@ function onResize(){
     })
     
     $(".module7").css({
-    	"width": 485*_x,
-    	"height": 355*_y
+    	"width": 525*_x,
+    	"height": 415*_y,
+		"marginTop": -60*_y
     })
     
     $("#theday_echarts").css({
-    	"width": 460*_x,
-    	"height": 385*_y
+    	"width": 520*_x,
+    	"height": 440*_y
     })
 
     $(".module8").css({
-    	"width": 530*_x,
-    	"height": 145*_y,
+    	"width": 790*_x,
+    	"height": 170*_y,
     	"marginLeft": 20*_x
     })
     
     $("#thedayloc_echarts").css({
-    	"width": 530*_x,
-    	"height": 200*_y,
+    	"width": 790*_x,
+    	"height": 225*_y,
 		"marginTop": -32*_y
     })
     
     $(".module9").css({
-    	"width": 235*_x,
-    	"height": 205*_y,
-    	"marginLeft": 25*_x,
-    	"marginTop": -60*_y
+    	"width": 500*_x,
+    	"height": 255*_y,
+    	"marginTop": 10*_y
     })
     
      $("#user_source").css({
     	"width": 205*_x,
-    	"height": 175*_y
+    	"height": 175*_y,
+		 "marginTop": -20*_y
     })
     
     $(".module10").css({
     	"width": 790*_x,
-    	"height": 195*_y,
+    	"height": 170*_y,
     	"marginLeft": 20*_x,
     	"marginTop": 15*_y
     })
     
     $("#thedayrice_echarts").css({
     	"width": 790*_x,
-    	"height": 255*_y,
+    	"height": 225*_y,
 		"marginTop": -30*_y
     })
        

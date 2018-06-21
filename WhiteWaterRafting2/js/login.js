@@ -80,7 +80,7 @@ $(function () {
                             emphasis: {
                                 areaColor: '#2a333d',
                                 borderWidth: 0,
-                                show:false,
+                                show:false
                             }
                         },
                         animation: false,
@@ -89,10 +89,10 @@ $(function () {
                     {
                         type: 'effectScatter',
                         coordinateSystem: 'geo',
+                        effectType: 'ripple',
                         tooltip : {
                             show:false
                         },
-
                         data: myData2 ,
                         symbolSize: function (val) {
                             return 5+(val[2]/20);

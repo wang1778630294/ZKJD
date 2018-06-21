@@ -29,7 +29,7 @@ $(function(){
  * */
 function slider(){
     $("#loc_emap").toggle();
-    $("#mapCharts").toggle();
+    $("#density").toggle();
 }
 
 /**
@@ -359,7 +359,7 @@ function drawLocUserTheDay(){
 
         for (var i=0;i<res.data.length;i++) {
             categoryData.push(res.data[i].date);
-            valueData.push(res.data[i].number);
+            valueData.push(res.data[i].number/10000);
         }
 
         var option = {
@@ -408,7 +408,7 @@ function drawLocUserTheDay(){
             },
             yAxis : [
                 {
-                    name : '定位次数(人/日)',
+                    name : '定位次数(万人/日)',
                     axisLine: {
                         lineStyle: {
                             color: '#eee'
@@ -499,7 +499,7 @@ function drawUserTheDay(){
 
         for (var i=0;i<res.data.length;i++) {
             categoryData.push(res.data[i].date);
-            valueData.push(res.data[i].number);
+            valueData.push(res.data[i].number/10000);
         }
 
         var option = {
@@ -548,7 +548,7 @@ function drawUserTheDay(){
             },
             yAxis : [
                 {
-                    name : '定位次数(人/日)',
+                    name : '定位人数(万人/日)',
                     axisLine: {
                         lineStyle: {
                             color: '#eee'
@@ -805,7 +805,7 @@ function userNum(user_total) {
             var startnum = user_total;
             var endnum = user_total+500*Math.random();
             setInterval(function(){
-                endnum += 9*Math.random();
+                endnum += 159*Math.random();
                 var options = {
                     useEasing: true,
                     useGrouping: true,
@@ -1088,6 +1088,7 @@ function userSource() {
         url: 'http://test.powerlbs.com:8090/fanzai_data_show/api/user/register',
         async: true,
         success: function (data) {
+            $(".spinner_content2").hide();
             var _odata = [];
             for (var i = 0; i<data.data.length; i++) {
                 _odata.push({

@@ -74,12 +74,12 @@ html,body{
     border: none;
 }
 .main .module4 .loc_user_container {
-    width: 100%;
-    overflow: hidden;
-    border: 20px solid transparent;
-    border-image: url('../images/border.png') 5%;
-    box-shadow: 0 0 5rem rgb(0,110,150);
-    box-sizing: border-box;
+    /*width: 100%;*/
+    /*overflow: hidden;*/
+    /*border: 20px solid transparent;*/
+    /*border-image: url('../images/border.png') 5%;*/
+    /*box-shadow: 0 0 5rem rgb(0,110,150);*/
+    /*box-sizing: border-box;*/
 
 }
 .main .module4 .loc_map{
@@ -87,7 +87,7 @@ html,body{
     position: relative;
 }
 
-.main .module4 .loc_map #mapCharts{
+#mapCharts{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -119,6 +119,16 @@ html,body{
     position: relative;
 }
 
+.spinner_content2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    z-index: 9999;
+}
+
 .main .module5 .spinner_content{
     width: 100%;
     height: 100%;
@@ -139,7 +149,6 @@ html,body{
     right: 0;
     margin: auto;
     background-color: #94ECFF;
-
     border-radius: 100%;
     -webkit-animation: scaleout 1.0s infinite ease-in-out;
     animation: scaleout 1.0s infinite ease-in-out;
@@ -162,6 +171,35 @@ html,body{
           -webkit-transform: scale(1.0);
           opacity: 0;
       }
+}
+
+#user_source{
+    float: left;
+}
+
+.mo_list{
+    float: left;
+}
+
+.mo_list li{
+    float: left;
+}
+
+.mo_list .mo_title{
+    color: #cccccc;
+    font-size: 14px;
+    float: left;
+    display:table-cell;
+    vertical-align:bottom;
+}
+
+.mo_list .mo_number{
+    color: #94ECFF;
+    text-align: right;
+    font-size: 20px;
+    float: right;
+    display:table-cell;
+    vertical-align:bottom;
 }
 
 .main .module6{
@@ -204,6 +242,7 @@ html,body{
     position: absolute;
     left: 180px;
     color: #94ECFF;
+    font-weight: bold;
 }
 
 .main .module8 .thedayloc_title .loc_num{
@@ -212,8 +251,19 @@ html,body{
     marign-left: 80px;
 }
 
+.user_resoue{
+    text-align: center;
+    font-size: 16px;
+    color: #94ECFF;
+    font-weight: bold;
+    height: 50px;
+    line-height: 30px
+;
+}
+
 .main .module9{
     /*background: #071428;*/
+    position: relative;
 }
 
 .main .module10{
@@ -225,6 +275,7 @@ html,body{
     position: absolute;
     left: 280px;
     color: #94ECFF;
+    font-weight: bold;
 }
 
 .main .module10 .thedayloc_title .loc_num{
