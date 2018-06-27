@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title>西站地区导航</title>
+<link rel="stylesheet" href="css/iconfont/iconfont.css">
+<link rel="stylesheet" href="css/style.min.css">
+
+<style>
+	.shareBtn{position:absolute;bottom:20px;width;102px;height:39px;left:50%;margin-left: -61px;}
+	.shareBtn img{width:102px;height:39px;}
+	.share{position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.3);display:none;z-index:99;}
+	.share img{width:90%;height:90%;margin-top:-50px;}
+</style>
+
+
+</head>
+
+<body>
+	<div id="groupLayer_Shade"></div>
+	<!--蜂鸟地图-->
+	<div id="fengMap"></div>
+
+	<!--地图加载中-->
+	<div class="map-loading" style="display:none;">
+		<div class="binding"></div>
+		<div class="pad">
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+		<div class="text">地图加载中...</div>
+	</div>
+	<div class="floorIcon sameIcon" id="sameIcon"></div>
+	<div class="floorIcon startIcon" id="startIcon"></div>
+	<div class="floorIcon endIcon" id="endIcon"></div>
+	<!--顶部搜索框-->
+	<div class="header-wrap">
+		<div class="common-wrap search-wrap">
+			<form class="search-style clearfix" id="form" action="#">
+				<span id="backBtn" class="backBtn"><i
+					class="icon iconfont icon-search"></i></span> <input type="text"
+					placeholder="搜分类、查地点、找设施" id="searchTxt" autocomplete="off"
+					onfocus="showCategoryPop(this,'home');return false;"> <span
+					id="clearBtn" class="clearBtn"><i
+					class="icon iconfont icon-add"></i></span>
+			</form>
+			<div class="shortcut-wrap">
+				<ul class="clearfix"></ul>
+			</div>
+		</div>
+	</div>
+	<!--分类搜索遮罩层-->
+	<div class="category-pop">
+		<div class="category-wrap"></div>
+		<!-- 常用搜索分类 -->
+		<div class="category-cont types">
+			<div class="category-info">
+				<div class="category-title">
+					<i class="icon iconfont icon-fenlei"></i>分类
+				</div>
+				<ul class="clearfix"></ul>
+			</div>
+		</div>
+		<div class="category-cont btns">
+			<div class="btn btn-myloc fl">
+				<i class="icon iconfont icon-sousuodingwei"></i><span>我的位置</span>
+			</div>
+			<div class="btn btn-maploc fr">
+				<i class="icon iconfont icon-dituxuandian"></i><span>地图选点</span>
+			</div>
+		</div>
+		<div class="category-cont blank">
+			<p></p>
+		</div>
+		<!-- 搜索结果展示 -->
+		<ul id="hotwords" class="hotwords" style="display: none"></ul>
+	</div>
+	<!--右侧导航菜单-->
+	<div class="right-wrap">
+		<ul>
+			<li onclick="shareBtn()">
+				<img style="width:26px;height:26px;margin:5px" src="images/fx4.png" />
+			</li>
+			<li id="mapSwitchBtn"><span class="change-icon"></span></li>
+			<li id="locationBtn"><i class="position-icon"></i></li>
+			<li id="clearAllStatus"><i class="clear-icon"></i></li>
+			<li id="voiceStatus" class="voiceStatus"><i class="voice-icon"></i></li>
+			<li id="parking"><img style="width:26px;height:26px;margin:5px" src="images/car4.png" /></li>
+			<li id="clearCar" style="position:relative;display:none;">
+				<img style="width:26px;height:26px;margin:5px" src="images/car3.png" />
+				<img style="width:26px;height:26px;margin:5px; position:absolute;left:0;top:0;" src="images/stop.png" />
+			</li>
+		</ul>
+	</div>
+	<!-- 选择其他地图App -->
+	<div class="mapApps" id="mapApps">
+		<ul>
+		</ul>
+	</div>
+
+	<!--底部信息窗-->
+	<div class="info-wrap clearfix">
+		<div class="text-area">
+			<p class="mainTitle">
+				<span class="modelname">乔治</span> <span class="groupname">乔治</span>
+			</p>
+			<p>
+				<small class="typename">综合店铺</small>
+			</p>
+		</div>
+		<div class="img-area" id="goToRoute">
+			<img class="goTo" src="images/go_to.png" width="64px" />
+		</div>
+	</div>
+	<!-- 路径起点终点窗口 -->
+	<div class="route-wrap clearfix" id="route-panel">
+		<div class="route-loc-wrap">
+			<div class="route-input">
+				<img src="images/s.png"> <input type="text" name="startTxt"
+					onfocus="showPickPage(1);return false;">
+			</div>
+			<div class="lineStyle"></div>
+			<div class="route-input">
+				<img src="images/e.png"> <input type="text" name="endTxt"
+					onfocus="showPickPage(2);return false;">
+			</div>
+		</div>
+		<div class="loc-btn-wrap">
+			<i class="icon iconfont icon-iconfontqiehuan02"></i>
+		</div>
+		<div class="route-btn-wrap" id="startNavi">
+			<img src="images/go.png" />
+		</div>
+	</div>
+	<!-- 导航页面 -->
+	<div class="navi-header">
+		<h5 class="navi-directiion center">前方直行</h5>
+		<p class="center">
+			<span class="navi-distance">15</span><span>米</span>
+		</p>
+		<div class="navi-stop-img">
+			<img src="images/endnav-icon.png" />
+		</div>
+		
+	</div>
+	<div class="navi-bottom-tip">
+		<span>目的地：</span><span class="mname">名称</span><span class="gname"></span>
+		<span class="right-tip"><i class="icon iconfont icon-buhang"></i><span
+			class="remain">2</span>分钟</span>
+	</div>
+	<div class="navi-info">
+		<p class="navi-dis">123</p>
+		<p class="navi-angle">456</p>
+		<p class="navi-info-lanya"></p>
+		<p class="navi-info-status"></p>
+		<p class="navi-info-floor"></p>
+		<p class="navi-info-loc"></p>
+	</div>
+	<!--室外地图 -->
+	<div id="outDoorMapContainer">
+		<div class="map-inDoor select">
+			<div class="inDoor-btn" id="inDoor-btn" ontouchstart="return true;">
+				<i class="indoor-icon"></i>
+			</div>
+		</div>
+		<div class="map-gpsLocation select">
+			<div class="gpsLocation-btn" id="gpsLocation-btn"
+				ontouchstart="return true;">
+				<i class="gpsLocation-icon"></i>
+			</div>
+		</div>
+	</div>
+	
+	<!--  点击分享位置
+	<div class="shareBtn" onclick="shareBtn()">
+		<img src="images/shareBtn.png" />
+	</div>
+	 -->
+	 
+	<!--  点击分享位置遮盖 -->
+	<div class="share" onclick="share()">
+		<img src="images/share.png" />
+	</div>
+	
+	<!-- <script src="lib/eruda.min.js"></script>
+    <script>eruda.init();</script> -->
+	<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+	<script src="lib/fengmap.min-v2.0.34.js"></script>
+	<script src="lib/layer.js"></script>
+	<script src="js/all.js?wpqupywyqyrrll"></script>
+	
+</body>
+
+</html>

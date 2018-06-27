@@ -1,8 +1,15 @@
 var _demo = null;
+var timer = null;
+var local_timer = null;
 $(function(){
     drawUserAndLoc();
     drawLocTheDay();
+
     drawUserTheDay();
+    setInterval(function () {
+        drawUserTheDay();
+        thedaylocEcharts();
+    },60000)
     counter();
     setTimeout(function () {
         locMap();
@@ -14,8 +21,11 @@ $(function(){
     drawLocUserTheDay();
 
     sumUp();
-    // setInterval(sumUp,5000)
-    userNum();
+    if (timer) {
+        clearInterval(timer);
+    }
+    timer = setInterval(sumUp,60000)
+    // userNum();
 
     setTimeout(function () {
         $(".model_slider").show();
@@ -207,7 +217,7 @@ function drawLocTheDay(){
     // $.getJSON('data/forday.json',function (res) {
     $.ajax({
         type: 'get',
-        url: 'http://test.powerlbs.com:8090/fanzai_data_show/statistic_location_growth_for_day',
+        url: 'http://test.powerlbs.com:8090/fanzai_data_show/statistic_location_for_day',
         async: true,
         success: function (res) {
 
@@ -496,10 +506,9 @@ function drawUserTheDay(){
         var categoryData = [];
         var valueData = [];
 
-
         for (var i=0;i<res.data.length;i++) {
-            categoryData.push(res.data[i].date);
-            valueData.push(res.data[i].number/10000);
+            categoryData.push(res.data[i].date.split(" ")[1].split(/:49/)[0]);
+            valueData.push(res.data[i].number);
         }
 
         var option = {
@@ -548,7 +557,7 @@ function drawUserTheDay(){
             },
             yAxis : [
                 {
-                    name : '定位人数(万人/日)',
+                    name : '定位人数(人/日)',
                     axisLine: {
                         lineStyle: {
                             color: '#eee'
@@ -581,36 +590,7 @@ function drawUserTheDay(){
             }]
         };
 
-        function generateData(count) {
-            var baseValue = Math.random() * 1000;
-            var time = +new Date(2011, 0, 1);
-            var smallBaseValue;
 
-            function next(idx) {
-                smallBaseValue = idx % 30 === 0
-                    ? Math.random() * 700
-                    : (smallBaseValue + Math.random() * 500 - 250);
-                baseValue += Math.random() * 20 - 10;
-                return Math.max(
-                    0,
-                    Math.round(baseValue + smallBaseValue) + 3000
-                );
-            }
-
-            var categoryData = [];
-            var valueData = [];
-
-            for (var i = 0; i < count; i++) {
-                categoryData.push(echarts.format.formatTime('yyyy-MM-dd', time));
-                valueData.push(next(i).toFixed(2));
-                time += 1000;
-            }
-
-            return {
-                categoryData: categoryData,
-                valueData: valueData
-            };
-        }
 
         mapChart.setOption(option);
     // })
@@ -628,7 +608,6 @@ function thedaylocEcharts(){
         type: 'get',
         url: 'http://test.powerlbs.com:8090/fanzai_data_show/statistic_location_growth_for_day',
         success:function (res) {
-
         $("#thedayloc_num").html(res.data.length);
         var mapChart = echarts.init(document.getElementById('thedayloc_echarts'));
 
@@ -637,8 +616,8 @@ function thedaylocEcharts(){
 
 
         for (var i=0;i<res.data.length;i++) {
-            categoryData.push(res.data[i].date);
-            valueData.push((res.data[i].number)/10000);
+            categoryData.push(res.data[i].date.split(" ")[1].split(/:49/)[0]);
+            valueData.push((res.data[i].number));
         }
 
         var option = {
@@ -687,7 +666,7 @@ function thedaylocEcharts(){
             },
             yAxis : [
                 {
-                    name : '定位次数(万次/日)',
+                    name : '定位次数(次/日)',
                     axisLine: {
                         lineStyle: {
                             color: '#eee'
@@ -720,36 +699,7 @@ function thedaylocEcharts(){
             }]
         };
 
-        function generateData(count) {
-            var baseValue = Math.random() * 1000;
-            var time = +new Date(2011, 0, 1);
-            var smallBaseValue;
 
-            function next(idx) {
-                smallBaseValue = idx % 30 === 0
-                    ? Math.random() * 700
-                    : (smallBaseValue + Math.random() * 500 - 250);
-                baseValue += Math.random() * 20 - 10;
-                return Math.max(
-                    0,
-                    Math.round(baseValue + smallBaseValue) + 3000
-                );
-            }
-
-            var categoryData = [];
-            var valueData = [];
-
-            for (var i = 0; i < count; i++) {
-                categoryData.push(echarts.format.formatTime('yyyy-MM-dd', time));
-                valueData.push(next(i).toFixed(2));
-                time += 1000;
-            }
-
-            return {
-                categoryData: categoryData,
-                valueData: valueData
-            };
-        }
 
         mapChart.setOption(option);
     // })
@@ -762,76 +712,91 @@ function thedaylocEcharts(){
  * */
 function counter(locat_total) {
 
-            var startnum = locat_total;
-            var endnum = locat_total+1250*Math.random();
-            setInterval(function(){
-                endnum += 1250*Math.random();
-                var options = {
-                    useEasing: true,
-                    useGrouping: true,
-                    separator: ',',
-                    decimal: '.',
-                };
+    var startnum = 0;
+    var usernum = 0;
+    var endnum;
+    var enduser;
 
-                if (_demo) {
-                    _demo = null;
-                }
-
-                _demo = new CountUp('myTargetElement', startnum, endnum, 0, 0.5, options);
-                if (!_demo.error) {
-                    _demo.start();
-                } else {
-
-                }
-
+    $.ajax({
+        type: 'get',
+        url: 'http://test.powerlbs.com:8090/fanzai_data_show/cumulative_today',
+        async: true,
+        success: function (res) {
+            if (res) {
+                endnum = res.locat_total;
+                enduser = res.user_total;
+                localNum(startnum,endnum);
+                userNum(usernum,enduser);
                 startnum = endnum;
+                usernum = enduser;
+            }
+        }
+    })
 
-
-            },5000)
+    if (local_timer) {
+        clearInterval(local_timer);
+    }
+    local_timer = setInterval(function () {
+        $.ajax({
+            type: 'get',
+            url: 'http://test.powerlbs.com:8090/fanzai_data_show/cumulative_today',
+            async: true,
+            success: function (res) {
+                if (res) {
+                    endnum = res.locat_total;
+                    enduser = res.user_total;
+                    localNum(startnum,endnum);
+                    userNum(usernum,enduser);
+                    startnum = endnum;
+                    usernum = enduser;
+                }
+            }
+        })
+    },60000)
 }
 
+
+function localNum(startnum,endnum){
+    var options = {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.',
+    };
+
+    if (_demo) {
+        _demo = null;
+    }
+
+    _demo = new CountUp('myTargetElement', startnum, endnum, 0, 0.5, options);
+    if (!_demo.error) {
+        _demo.start();
+    } else {
+
+    }
+}
 
 /**
  * 计数器用户人数
  * */
-function userNum(user_total) {
+function userNum(usernum,enduser) {
+        var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+        };
 
+        if (_demo) {
+            _demo = null;
+        }
 
-    // $.ajax({
-    //     type: 'get',
-    //     url: 'http://test.powerlbs.com:8090/fanzai_data_show/cumulative_today',
-    //     async: true,
-    //     success: function (res) {
-            var startnum = user_total;
-            var endnum = user_total+500*Math.random();
-            setInterval(function(){
-                endnum += 159*Math.random();
-                var options = {
-                    useEasing: true,
-                    useGrouping: true,
-                    separator: ',',
-                    decimal: '.',
-                };
+        _demo = new CountUp('user_num', usernum, enduser, 0, 0.5, options);
+        if (!_demo.error) {
+            _demo.start();
+        } else {
 
-                if (_demo) {
-                    _demo = null;
-                }
-
-                _demo = new CountUp('user_num', startnum, endnum, 0, 0.5, options);
-                if (!_demo.error) {
-                    _demo.start();
-                } else {
-
-                }
-
-                startnum = endnum;
-
-            },5000)
-    //     }
-    // })
-
-
-
+        }
 }
 
 /**
@@ -844,6 +809,7 @@ function density() {
     $.ajax({
         type: 'get',
         url: 'http://test.powerlbs.com:8090/fanzai_data_show/finger_density',
+        timeout: 500000,
         async: true,
         success: function (res) {
         var weiboData1 = [];
@@ -948,7 +914,7 @@ function density() {
 
         },
         error: function (res) {
-            alert("获取指纹数据失败了");
+
         }
     })
 
@@ -961,7 +927,6 @@ function locMap() {
     //初始化
     var myChart = echarts.init(document.getElementById('loc_emap'));
     $.getJSON('data/data-1491917776060-Sku0i8qpx.json', function (weiboData) {
-    console.log(weiboData);
     // $.ajax({
     //     type: 'get',
     //     url: 'http://test.powerlbs.com:8090/fanzai_data_show/realtime_locate_map',
@@ -1138,10 +1103,12 @@ function sumUp(){
         url: 'http://test.powerlbs.com:8090/fanzai_data_show/cumulative_total',
         async: true,
         success: function (res) {
-            $("#loc_sum").html(res.data.locat_sum);
-            $("#user_sum").html(res.data.user_sum);
-            $("#ap_sum").html(res.data.ap_sum);
-            $("#dir_sum").html(res.data.fingerprint_sum);
+            if (res.data) {
+                $("#loc_sum").html(res.data.locat_sum);
+                $("#user_sum").html(res.data.user_sum);
+                $("#ap_sum").html(res.data.ap_sum);
+                $("#dir_sum").html(res.data.fingerprint_sum);
+            }
         }
     })
 }
