@@ -260,7 +260,7 @@ function drawLocTheDay(){
             },
             dataZoom: [{
                 type: 'inside',
-                startValue:res.data.length - 7
+                startValue:res.data.length-7
             }],
             xAxis: {
                 data: categoryData,
@@ -538,7 +538,7 @@ function drawUserTheDay(){
             },
             dataZoom: [{
                 type: 'inside',
-                startValue:res.data.length - 7
+                // startValue:res.data.length - 7
             }],
             xAxis: {
                 data: categoryData,
@@ -608,6 +608,9 @@ function thedaylocEcharts(){
         type: 'get',
         url: 'http://test.powerlbs.com:8090/fanzai_data_show/statistic_location_growth_for_day',
         success:function (res) {
+
+
+
         $("#thedayloc_num").html(res.data.length);
         var mapChart = echarts.init(document.getElementById('thedayloc_echarts'));
 
@@ -647,7 +650,7 @@ function thedaylocEcharts(){
             },
             dataZoom: [{
                 type: 'inside',
-                startValue:res.data.length - 7
+                // startValue:res.data.length
             }],
             xAxis: {
                 data: categoryData,
